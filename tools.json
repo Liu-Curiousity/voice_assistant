@@ -1,0 +1,21 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "set_yaw_angle",
+            "description": "设置yaw轴角度,成功返回success,失败返回error",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "angle": {
+                        "type": "string",
+                        "description": "角度,单位度"
+                    }
+                },
+                "required": [
+                    "angle"
+                ]
+            }
+        }
+    }
+]
