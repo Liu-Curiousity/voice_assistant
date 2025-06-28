@@ -2,19 +2,72 @@
     {
         "type": "function",
         "function": {
-            "name": "set_yaw_angle",
-            "description": "设置yaw轴角度,成功返回success,失败返回error",
+            "name": "light_on",
+            "description": "打开灯光/开灯，用户说要开灯、打开灯光、需要光照时调用此函数",
             "parameters": {
                 "type": "object",
-                "properties": {
-                    "angle": {
-                        "type": "string",
-                        "description": "角度,单位度"
-                    }
-                },
-                "required": [
-                    "angle"
-                ]
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "light_off",
+            "description": "关闭灯光/关灯，用户说要关灯、关闭灯光、不需要光照时调用此函数",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "light_brighter",
+            "description": "调高灯光亮度/增加亮度，用户说要调亮、增加亮度、灯光太暗时调用此函数",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "light_dimmer",
+            "description": "调低灯光亮度/降低亮度，用户说要调暗、降低亮度、灯光太亮时调用此函数",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "color_temperature_up",
+            "description": "提升光照色温，让灯光更偏向冷白色，用户说要调白、调冷、色温高一点时调用此函数",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "color_temperature_down",
+            "description": "降低光照色温，让灯光更偏向暖黄色，用户说要调黄、调暖、色温低一点时调用此函数",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
             }
         }
     }

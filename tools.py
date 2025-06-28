@@ -1,6 +1,18 @@
-def set_yaw_angle(angle):
-    print(f"==>设置yaw轴角度为{angle}度<==")
+def light_on():
+    print("==>打开灯光<==")
     return "success"
 
+def light_off():
+    print("==>关闭灯光<==")
+    return "success"
 
-tools_map = {"set_yaw_angle": set_yaw_angle}
+def light_brighter():
+    print("==>调高灯光亮度<==")
+    return "success"
+
+def light_dimmer():
+    print("==>调低灯光亮度<==")
+    return "success"
+
+tools_map = {"light_on": light_on,
+            "light_off": light_off}
